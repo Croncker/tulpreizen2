@@ -1,0 +1,46 @@
+@use 'colors';
+@use 'fonts';
+
+%cta{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 70%;
+    background: colors.$pink;
+    border: none;
+    color: colors.$font-color;
+    border-radius: 0.5rem;
+}
+
+%cta:hover{
+    cursor: pointer;
+    background: darken(colors.$pink, 10%);
+    transition: 0.2s;
+}
+
+%header{
+    font-size: 200%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem
+}
+
+%h2Handwriting{
+    font-family: fonts.$handwriting;
+    font-size: 180%;
+    color: colors.$font-color
+}
+
+%section{
+    height: 80rem;
+    border-bottom: colors.$border-pink;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+%icon{
+    font-size: 300%;
+    color: colors.$font-color;
+    border: colors.$border-pink;
+    border-radius: 50%;
+}
